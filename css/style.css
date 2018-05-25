@@ -1,0 +1,157 @@
+
+/* C S S  R E S E T */
+html *,
+*:before,
+*:after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* Root font size */
+html {
+	font-size: 100%;
+}
+
+/* G L O B A L  T Y P O G R A P H Y  R U L E S */
+body {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 1em;
+	line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lobster', cursive;
+	letter-spacing: 0.1em;
+	word-spacing: 0.05em;
+}
+
+h1 {font-size: 17.942em;}
+
+h2 {font-size: 11.089em;}
+
+h3 {
+	font-size: 6.854em;
+	font-variant: small-caps;
+}
+
+h4 {font-size: 4.236em;}
+
+h5 {font-size: 2.618em;}
+
+h6 {font-size: 1.618em;}
+
+small {font-size: 0.618em;}
+
+code {
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 0.854em;
+}
+
+/* M O B I L E  S P E C I F I C  S T Y L E */
+body {
+	position: relative;
+	background-color: #240041;
+}
+
+.no-mobile {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	width: 19em;
+	height: 19em;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #e6e6e6;
+}
+
+.no-mobile p,
+.no-mobile div, {
+	display: inline-block;
+	border: 1px solid gold;
+}
+
+.no-mobile div {
+	font-size: 9em;
+}
+
+@media screen and (min-width: 1024px) {
+	/* Remove mobile styles */
+	body {
+		position: static;
+		background-color: initial;
+		/* overflow: hidden; */
+	}
+
+	.no-mobile {
+		display: none;
+	}
+
+	/* Begin desktop styles */
+	.content-container {
+		width: 60em;
+	}
+
+	.intro-section,
+	.slide-section {
+		position: relative;
+		z-index: -2;
+		min-height: 100vh;
+		width: 100%;
+		background: #240041;
+	}
+
+	.background-shape {
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		background: #ff4057;
+		height: 300px;
+		min-height: 50%;
+		width: 100%;
+	}
+
+	.background-shape:after {
+		content: "";
+		display: block;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		height: 0;
+		width: 0;
+		border-top: 50vh solid transparent;
+		border-right: 70vw solid #240041;
+	}
+
+	.background-shape:before {
+		content: "";
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 0;
+		width: 0;
+		border-right: 29vw solid transparent;
+		border-bottom: 25vh solid #240041;
+	}
+
+	.intro-section .content-container {
+		min-height: 100vh;
+		border: 1px solid gold;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	.content-container {
+		width: 75em;
+	}
+}
+
+@media screen and (min-width: 1680px) {
+	.content-container {
+		width: 90em;
+	}
+}
