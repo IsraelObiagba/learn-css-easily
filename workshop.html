@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop</title>
+    <style>
+        /*CSS Reset - Override browser defaults*/
+        html * {
+            /*box-sizing: content-box;
+            margin: browser knows it;
+            padding: browser knows it;*/
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main {
+            border: 1px solid red;
+            height: 640px;
+            width: 100%;
+            /*box-sizing: content-box;*/
+        }
+
+        .section {
+            height: 25%; /*equal heights*/
+            border: 1px solid gold;
+        }
+
+        .section01 div {
+            color: #ffffff;
+            font-size: 24px;
+            width: 70%;
+            border: 1px solid black;
+            padding: 16px;
+        }
+
+        .bad-guy h1, 
+        .good-guy h1 {
+            padding-bottom: 16px;
+        }
+
+        .bad-guy p, 
+        .good-guy p {
+            padding-left: 24px;
+        }
+
+        .bad-guy {
+            /*box-sizing: content-box; */
+            background: blue;
+            margin-left: 16px;
+            margin-top: 8px;
+        }
+
+        .good-guy {
+            /*box-sizing: border-box;*/
+            background: orange;
+            /*margin-bottom: 8px;*/
+            /*margin-left: 24px;*/
+            /*margin: 8px 16px;*/
+            /*margin: 8px 16px 24px;*/
+            margin: -8px 16px 24px 36px;
+        }
+
+        .emoji01 {
+            position: relative;
+        }
+
+        .emoji02 {
+            
+        }
+
+        .idk {
+            height: 100px;
+            width: 100px !important;
+            /*border: 1px solid green;*/
+            border-radius: 50%;
+            background-color: gold;
+
+            position: relative;
+            bottom: 70px;
+            left: 400px;
+            z-index: -1;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="main">
+        <section class="section01 section">
+            <div class="bad-guy">
+                <h1>Lorem ipsum dolor sit amet.</h1><span class="emoji01">😉</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ducimus maxime vel ipsam quidem iusto quod id enim laborum libero, ipsa animi error soluta, adipisci quasi neque facilis consequatur veniam magni quas, totam suscipit tenetur debitis a. Sapiente adipisci, laboriosam expedita quo culpa officia voluptate vero cumque ab fugiat tempore!</p>
+            </div>
+            <div class="good-guy">
+                <h1>Lorem ipsum dolor sit amet.</h1><span class="emoji02">😍</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quia sunt perspiciatis temporibus vel odit, ipsam, commodi assumenda. Tempora harum eum delectus, deserunt excepturi iste optio quaerat minus veniam numquam temporibus, dolorum ipsam modi ab architecto officiis ratione aspernatur. Soluta eius quos necessitatibus doloribus, deserunt minima voluptate suscipit nisi harum?</p>
+            </div>
+            <div class="idk"></div>
+        </section>
+        <section class="section02 section"></section>
+        <section class="section03 section"></section>
+        <section class="section04 section"></section>
+    </main>
+</body>
+</html>
