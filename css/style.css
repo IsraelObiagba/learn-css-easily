@@ -86,7 +86,7 @@ body {
 }
 
 .no-mobile p,
-.no-mobile div, {
+.no-mobile div {
 	display: inline-block;
 	border: 1px solid gold;
 }
